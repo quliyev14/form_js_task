@@ -3,19 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1 id="header"></h1>
+    <!-- SOL -->
+    <section id="left-section">
+        <h1 id="header">Settings</h1>
+        <form>
+            <label for="l-fullname">Full Name
+                <input type="text" id="l-fullname" name="l-fullname">
+            </label>
 
-    <select name="country" id="country">
-        
-    </select>
 
+            <label for="l-email">Email Address
+                <input type="email" id="l-email" name="l-email">
+            </label>
+
+
+            <label for="l-phone">Phone Number
+                <input type="tel" id="l-phone" name="l-phone">
+            </label>
+
+
+
+            <label for="l-plan">Plan
+                <input type="text" id="l-plan" name="l-plan">
+            </label>
+
+
+
+            <label for="l-billing">Billing Interval
+                <select id="l-billing" name="l-billing">
+                   
+                </select>
+            </label>
+
+
+
+
+            <label for="l-street">Street Address
+                <input type="text" id="l-street" name="l-street">
+            </label>
+
+
+
+
+
+            <label for="l-city">City
+                <input type="text" id="l-city" name="l-city">
+            </label>
+
+
+            <label for="l-province">Province
+                <select id="l-province" name="l-province">
+
+                </select>
+            </label>
+
+
+
+            <label for="l-zip">ZIP/Postal Code
+                <input type="text" id="l-zip" name="l-zip">
+            </label>
+
+
+            <label for="l-country">Country
+                <select id="l-country" name="l-country"></select>
+            </label>
+
+
+
+            <label for="l-password">Password
+                <input type="password" id="l-password" name="l-password">
+            </label>
+
+
+            <label for="l-confirm">Confirm Password
+                <input type="password" id="l-confirm" name="l-confirm-password">
+            </label>
+
+            <button type="reset" id="cancel">Cancel</button>
+            <button type="submit" id="update">Update</button>
+        </form>
+    </section>
+
+    <!-- SAĞ -->
+    <section id="right-section">
+        <h1>Settings</h1>
+        <form>
+            <hr>
+            <h2 class="span3">Account</h2>
+            <label for="r-fullnam">Full Name
+                <input type="text" id="r-fullname" name="r-fullname">
+            </label>
+
+
+
+            <label for="r-email">Email Address
+                <input type="email" id="r-email" name="r-email">
+            </label>
+
+
+
+
+            <label for="r-phone">Phone Number
+                <input type="tel" id="r-phone" name="r-phone">
+            </label>
+
+
+
+
+            <hr>
+
+
+            <h2>Billing</h2>
+            <label for="r-plan">Plan
+                <input type="text" id="r-plan" name="r-plan">
+            </label>
+
+
+
+
+            <label for="r-billing">Billing Interval
+                <select id="r-billing" name="r-billing">
+                    
+                </select>
+            </label>
+
+
+
+
+            <hr>
+            <h2 class="span3">Business Address</h2>
+            <label for="r-street">Street Address
+                <input type="text" id="r-street" name="r-street">
+            </label>
+
+
+
+
+            <label for="r-city">City
+                <input type="text" id="r-city" name="r-city">
+            </label>
+
+
+
+
+            <label for="r-province">Province
+                <select id="r-province" name="r-province"></select>
+            </label>
+
+
+
+
+
+            <label for="r-zip">ZIP/Postal Code
+                <input type="text" id="r-zip" name="r-zip">
+            </label>
+
+
+
+
+
+            <label for="r-country">Country
+                <select id="r-country" name="r-country"></select>
+            </label>
+
+            <hr>
+
+
+
+
+            <h2>Change Password <small>Password must be at least 6 characters.</small></h2>
+            <label for="r-password">Password
+                <input type="password" id="r-password" name="r-password">
+            </label>
+
+
+
+
+
+
+            <label for="r-confirm-password">Confirm Password
+                <input type="password" id="r-confirm-password" name="r-confirm-password">
+            </label>
+
+
+
+
+
+
+            <hr>
+            <footer>
+                <button type="reset" class="cancel">Cancel</button>
+                <button type="submit" class="update">Update</button>
+            </footer>
+
+
+
+
+
+        </form>
+    </section>
 
     <script src="index.js"></script>
-    
 </body>
 </html>
