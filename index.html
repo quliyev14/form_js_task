@@ -7,205 +7,92 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- SOL -->
     <section id="left-section">
         <h1 id="header">Settings</h1>
         <form>
-            <label for="l-fullname">Full Name
+            <div class="field">
+                <label for="l-fullname">Full Name</label>
                 <input type="text" id="l-fullname" name="l-fullname">
-            </label>
+            </div>
 
-
-            <label for="l-email">Email Address
+            <div class="field">
+                <label for="l-email">Email Address</label>
                 <input type="email" id="l-email" name="l-email">
-            </label>
+            </div>
 
-
-            <label for="l-phone">Phone Number
+            <div class="field">
+                <label for="l-phone">Phone Number</label>
                 <input type="tel" id="l-phone" name="l-phone">
-            </label>
+            </div>
 
+            <div class="row">
+                <div class="field">
+                    <label for="l-plan">Plan</label>
+                    <input type="text" id="l-plan" name="l-plan">
+                </div>
+                <div class="field">
+                    <label for="l-billing">Billing Interval</label>
+                    <select id="l-billing" name="l-billing"></select>
+                </div>
+            </div>
 
-
-            <label for="l-plan">Plan
-                <input type="text" id="l-plan" name="l-plan">
-            </label>
-
-
-
-            <label for="l-billing">Billing Interval
-                <select id="l-billing" name="l-billing">
-                   
-                </select>
-            </label>
-
-
-
-
-            <label for="l-street">Street Address
+            <div class="field">
+                <label for="l-street">Street Address</label>
                 <input type="text" id="l-street" name="l-street">
-            </label>
+            </div>
 
+            <div class="row">
+                <div class="field">
+                    <label for="l-city">City</label>
+                    <input type="text" id="l-city" name="l-city">
+                </div>
+                <div class="field">
+                    <label for="l-province">Province</label>
+                    <select id="l-province" name="l-province"></select>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="field">
+                    <label for="l-zip">ZIP/Postal Code</label>
+                    <input type="text" id="l-zip" name="l-zip">
+                </div>
+                <div class="field">
+                    <label for="l-country">Country</label>
+                    <select id="l-country" name="l-country"></select>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="field">
+                    <label for="l-password">Password</label>
+                    <input type="password" id="l-password" name="l-password">
+                </div>
+                <div class="field">
+                    <label for="l-confirm">Confirm Password</label>
+                    <input type="password" id="l-confirm" name="l-confirm">
+                </div>
+            </div>
 
-
-            <label for="l-city">City
-                <input type="text" id="l-city" name="l-city">
-            </label>
-
-
-            <label for="l-province">Province
-                <select id="l-province" name="l-province">
-
-                </select>
-            </label>
-
-
-
-            <label for="l-zip">ZIP/Postal Code
-                <input type="text" id="l-zip" name="l-zip">
-            </label>
-
-
-            <label for="l-country">Country
-                <select id="l-country" name="l-country"></select>
-            </label>
-
-
-
-            <label for="l-password">Password
-                <input type="password" id="l-password" name="l-password">
-            </label>
-
-
-            <label for="l-confirm">Confirm Password
-                <input type="password" id="l-confirm" name="l-confirm-password">
-            </label>
-
-            <button type="reset" id="cancel">Cancel</button>
-            <button type="submit" id="update">Update</button>
+            <div class="buttons">
+                <button type="reset" id="cancel" class="cancel">Cancel</button>
+                <button type="submit" id="submit" class="submit">Submit</button>
+            </div>
         </form>
     </section>
 
-    <!-- SAĞ -->
-    <section id="right-section">
-        <h1>Settings</h1>
-        <form>
-            <hr>
-            <h2 class="span3">Account</h2>
-            <label for="r-fullnam">Full Name
-                <input type="text" id="r-fullname" name="r-fullname">
-            </label>
-
-
-
-            <label for="r-email">Email Address
-                <input type="email" id="r-email" name="r-email">
-            </label>
-
-
-
-
-            <label for="r-phone">Phone Number
-                <input type="tel" id="r-phone" name="r-phone">
-            </label>
-
-
-
-
-            <hr>
-
-
-            <h2>Billing</h2>
-            <label for="r-plan">Plan
-                <input type="text" id="r-plan" name="r-plan">
-            </label>
-
-
-
-
-            <label for="r-billing">Billing Interval
-                <select id="r-billing" name="r-billing">
-                    
-                </select>
-            </label>
-
-
-
-
-            <hr>
-            <h2 class="span3">Business Address</h2>
-            <label for="r-street">Street Address
-                <input type="text" id="r-street" name="r-street">
-            </label>
-
-
-
-
-            <label for="r-city">City
-                <input type="text" id="r-city" name="r-city">
-            </label>
-
-
-
-
-            <label for="r-province">Province
-                <select id="r-province" name="r-province"></select>
-            </label>
-
-
-
-
-
-            <label for="r-zip">ZIP/Postal Code
-                <input type="text" id="r-zip" name="r-zip">
-            </label>
-
-
-
-
-
-            <label for="r-country">Country
-                <select id="r-country" name="r-country"></select>
-            </label>
-
-            <hr>
-
-
-
-
-            <h2>Change Password <small>Password must be at least 6 characters.</small></h2>
-            <label for="r-password">Password
-                <input type="password" id="r-password" name="r-password">
-            </label>
-
-
-
-
-
-
-            <label for="r-confirm-password">Confirm Password
-                <input type="password" id="r-confirm-password" name="r-confirm-password">
-            </label>
-
-
-
-
-
-
-            <hr>
-            <footer>
-                <button type="reset" class="cancel">Cancel</button>
-                <button type="submit" class="update">Update</button>
-            </footer>
-
-
-
-
-
-        </form>
+    <section id="result-section">
+        <h1 id="out-fullname"></h1>
+        <h1 id="out-email"></h1>
+        <h1 id="out-phone"></h1>
+        <h1 id="out-plan"></h1>
+        <h1 id="out-billing"></h1>
+        <h1 id="out-street"></h1>
+        <h1 id="out-city"></h1>
+        <h1 id="out-province"></h1>
+        <h1 id="out-zip"></h1>
+        <h1 id="out-country"></h1>
+        <h1 id="out-password"></h1>
     </section>
 
     <script src="index.js"></script>
